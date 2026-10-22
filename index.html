@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy: ScriptSense Rx Inbox Processor</title>
+<style>
+  body { font: 16px/1.6 system-ui, "Segoe UI", Arial, sans-serif; color: #1b2130; max-width: 760px; margin: 40px auto; padding: 0 20px; }
+  h1 { font-size: 28px; margin-bottom: 4px; } h2 { font-size: 19px; margin-top: 30px; }
+  .updated { color: #5d6679; margin-top: 0; } ul { padding-left: 22px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; } th, td { border: 1px solid #d5d9e2; padding: 8px 10px; text-align: left; vertical-align: top; } th { background: #f3f5f9; }
+</style>
+</head>
+<body>
+<h1>Privacy policy: ScriptSense Rx Inbox Processor</h1>
+<p class="updated">Last updated: 23 October 2026</p>
+
+<p>The ScriptSense Rx Inbox Processor ("the extension") is a Chrome extension for pharmacists who use ScriptSense. It helps work through the prescriptions in their ScriptSense inbox. This policy explains what it handles.</p>
+
+<h2>The short version</h2>
+<ul>
+  <li>The extension runs in your browser. We operate no servers for it.</li>
+  <li>It has no analytics, no advertising and no tracking, and it loads no remote code.</li>
+  <li>It works only on the ScriptSense app (scriptsense.co.nz) and nothing else.</li>
+</ul>
+
+<h2>What the extension handles</h2>
+<ul>
+  <li><strong>Prescription and patient information</strong> shown in the ScriptSense app, which can include patient names, medicines, quantities and funding details. It is read from the ScriptSense page and from the ScriptSense API so that a dispense can be prepared, and it is used only for that.</li>
+  <li><strong>The signed-in user's ScriptSense access token.</strong> The extension reads it from the ScriptSense page so it can call the ScriptSense API as the user who is already signed in. It is kept in the browser's memory only. It is never saved, logged, displayed or sent anywhere except to the ScriptSense API.</li>
+  <li><strong>Staff details</strong>: the signed-in pharmacist's name, staff ID, roles and HPI CPN if available, recorded in the extension's activity log as the person responsible for a session.</li>
+</ul>
+
+<h2>What the extension stores</h2>
+<p>In the user's own browser only (Chrome's extension storage):</p>
+<ul>
+  <li>the pharmacist's rule choices and settings;</li>
+  <li>an activity log of what the extension did (Rx numbers, medicine names, outcomes and reasons, times, and the pharmacist responsible), and a record that the production notice was accepted for each session;</li>
+  <li>short-lived run state in the browser session, which is cleared when the browser closes.</li>
+</ul>
+<p>The activity log can be exported by the user to a file in their Downloads folder. The extension never sends it anywhere.</p>
+
+<h2>Permissions and why they are needed</h2>
+<table>
+<tr><th>Permission</th><th>What it allows</th><th>Why the extension needs it</th></tr>
+<tr><td>storage</td><td>Saving data in the browser's extension storage on this computer</td><td>To keep the pharmacist's settings and the activity log</td></tr>
+<tr><td>sidePanel</td><td>Showing the extension's panel beside the page</td><td>The control panel the pharmacist uses to start, stop and review work</td></tr>
+<tr><td>Access to https://scriptsense.co.nz/*</td><td>Running on, and reading, the ScriptSense app's pages</td><td>To read the inbox and fill in the dispense form for the signed-in pharmacist. It has no access to any other website.</td></tr>
+</table>
+
+<h2>Where information goes</h2>
+<ul>
+  <li>To the <strong>ScriptSense API</strong> (api.prd.scriptsense.co.nz) that the user is already signed in to, to read prescription details and, for a small number of actions the user has switched on (marking an earlier prescription item inactive, moving an inbox item to a folder), to record a change in the same system. Dispenses themselves are submitted through the ScriptSense dispense form, exactly as if the pharmacist had pressed its Submit button.</li>
+  <li>To the <strong>print service on the user's own computer</strong> (localhost) when the extension prints a summary report or a label.</li>
+</ul>
+<p>It is <strong>not</strong> sent to advertisers, analytics services or any other third party. The extension has no analytics, no tracking, and no remote code.</p>
+
+<h2>What we do not do</h2>
+<p>We do not sell or share this information, we do not use it for anything other than preparing and recording the user's own dispensing work, and we do not use it for advertising, credit or lending decisions.</p>
+
+<h2>Keeping it safe</h2>
+<p>The extension works only on the ScriptSense app and has no access to other websites. Only a signed-in user with the Pharmacist role can switch automatic processing on, and the user can stop it at any time. Everything it does is recorded in the activity log.</p>
+
+<h2>Your choices</h2>
+<p>Uninstalling the extension removes everything it stored in the browser. The activity log keeps only the most recent entries (the newest 200 and 50 sessions) and older ones are dropped automatically.</p>
+
+<h2>Contact</h2>
+<p>Puneet Saini, ScriptSense: <a href="mailto:puneet@scriptsense.co.nz">puneet@scriptsense.co.nz</a></p>
+</body>
+</html>
